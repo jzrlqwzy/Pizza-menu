@@ -75,7 +75,7 @@ function Menu() {
   const numPizzas = pizzas.length;
 
   return (
-    <main>
+    <main className="menu">
       <h2 className="menu">Our menu</h2>
 
       {numPizzas > 0 ? (
@@ -119,7 +119,6 @@ function Footer() {
   const openHour = 12;
   const closeHour = 22;
   const isOpen = hour >= openHour && hour <= closeHour;
-  console.log(isOpen);
 
   return (
     <footer className="footer">
@@ -139,9 +138,9 @@ function Order({ openHour, closeHour }) {
     <div className="order">
       <p>
         We're open from {openHour}:00 to {closeHour}:00. Come visit us or order
-        online
+        online.
       </p>
-      <btn className="btn">Order</btn>
+      <button className="btn">Order</button>
     </div>
   );
 }
