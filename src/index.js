@@ -141,7 +141,7 @@ function Order({ openHour, closeHour }) {
         We're open from {openHour}:00 to {closeHour}:00. Come visit us or order
         online
       </p>
-      <btn className="btn">Order</btn>
+      <btn is="btn">Order</btn>
     </div>
   );
 }
